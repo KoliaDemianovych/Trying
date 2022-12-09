@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="num1"/>
+    <p>+</p>
+    <input id="num2"/>
+    <button onclick="quantity()">Equal</button>
+   
+    <p id="result"></p>
+
+<p id="result"></p>
+    <script>
+        let first= +prompt("Enter first number ");
+        let second= +prompt("Enter second number ");
+        if (first > second){
+            console.log(first)}
+        else if (first == second){
+            console.log("Even numbers")}
+        else {
+            console.log(second)};
+
+        function quantity(){
+          let num1 = Number(document.getElementById("num1").value);
+          let num2 = Number(document.getElementById("num2").value);
+          let result = num1 + num2;
+
+          document.getElementById("result").innerHTML = result;
+          }
+
+          let modul= +prompt("Enter number:")
+          console.log(Math.abs(modul))
+
+          function checkLeapYear(year) {
+
+        let leap = new Date(year, 1, 29).getDate() === 29;
+        if (leap) {
+            console.log(year + ' is a leap year');
+        } else {
+            console.log(year + ' is not a leap year');
+        }
+        }
+
+        const year = prompt('Enter a year:');
+
+        checkLeapYear(year);
+
+    
+
+        
+    </script>
+    
+</body>
+</html>
