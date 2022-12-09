@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function number(){
+        let ent= +prompt("Enter any number:")
+        if (ent > 0){
+            console.log("Positive")}
+        else if (ent < 0){
+            console.log("Negative")}
+        else if(ent = 0){
+            console.log("Zero")
+        }
+        else {
+            console.log(ent)};
+        }
+        number()
+
+        function number2(){
+            let number1= +prompt("Enter any number right here:")
+            let number2= +prompt("Enter any number right here:")
+            if (number1 > number2){
+            console.log(number1)}
+            else if (number1 < number2){
+            console.log(number2)}
+            else {
+                console.log(number2)
+            }
+        }
+        number2()
+
+        function checkLeapYear(year) {
+
+        let leap = new Date(year, 1, 29).getDate() === 29;
+        if (leap) {
+            console.log(year + ' is a leap year');
+        } else {
+            console.log(year + ' is not a leap year');
+        }
+        }
+
+        const year = prompt('Enter a year:');
+
+        checkLeapYear(year);
+
+        function Game(){
+            const random = Math.floor(Math.random() * 10) + 1
+            let number = parseInt(prompt('Guess a number from 1 to 10: '));
+            while(number !== random) {
+            number = parseInt(prompt('Guess a number from 1 to 10: '));}
+            if(number == random) {
+            console.log('You guessed the correct number.');}
+
+        }
+        Game()
+
+        
+         
+    </script>
+</body>
+</html>
